@@ -1,0 +1,282 @@
+/* SearchProducts.css */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.search-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.title-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Flexbox row for dropdown filters */
+.filter-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Make dropdowns flexible and responsive */
+.search-form select {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-form input,
+.search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+    border-color: #f7d47b;
+}
+
+.search-form button {
+    background-color: #f7d47b;
+    color: rgb(35, 32, 32);
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #f4cb65;
+}
+
+.results-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.results-container h3 {
+    font-size: 20px;
+    color: #555;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.product-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.product-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.product-details p strong {
+    color: #333;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-links a:hover {
+    color: #45a049;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7d47b;
+    /* Yellow background */
+    color: #333;
+    /* Dark text color for contrast */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #FFC107;
+    /* Slightly darker yellow on hover */
+}
+
+button:active {
+    background-color: #FFA000;
+    /* Even darker yellow when clicked */
+}
+
+
+.welcome-section {
+    background-color: #fffae5;
+    /* Light yellow background */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 10px 0 0;
+}
+
+.add-to-wishlist {
+    background-color: #FFD700;
+    /* Yellow background */
+    color: #333;
+    /* Dark text for contrast */
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.add-to-wishlist:hover {
+    background-color: #FFC107;
+    /* Slightly darker yellow */
+}
+
+.add-to-wishlist:active {
+    background-color: #FFA000;
+    /* Darker yellow on click */
+}
